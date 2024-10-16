@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #0080ff;
+    --secondary-color: #ffaa00;
+    --white: #fff;
+    --black: #000;
+    --background-color: #fcfcfc;
+    --font-color: #333;
+    --font-family: math
+}
+
+html{
+    height: 100%
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    line-height: 1.6;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    padding: 1rem;
+    font-size: 11px;
+    box-shadow: 1px 0px 10px #ddd;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+#output {
+    margin-top: 20px;
+}
