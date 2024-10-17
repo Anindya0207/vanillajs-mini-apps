@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frontend Interview</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="/mc/ratinamaze/styles.css">
+    <script defer type="module" src="/mc/ratinamaze/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Frontend Interview Project</h1>
+    </header>
+    <main>
+        <div class="inputWrapper">
+            <label for="gridSize" name="gridSize">Enter grid size: </label>
+            <input required id="gridSize" name="gridSize" autoFocus/>
+            <button id="generateMaze" style="padding: 6px;width: 90px">
+                Generate
+            </button>
+            <div id="gridSizeInputError"> </div>
+            
+        </div>
+        
+        <section id="root"></section>
+        <div id="actions">
+            
+            <button id="playBtn">
+                Play
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Interview Prep</p>
+    </footer>
+</body>
+</html>
