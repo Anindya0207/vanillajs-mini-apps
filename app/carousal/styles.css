@@ -1,0 +1,27 @@
+
+.container {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    overflow-x: scroll;
+    background: #fff;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousal {
+    object-fit: cover;
+    display: flex;
+    flex: 0 0 550px;
+    width: 550px;
+    height: 400px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    &:nth-child(odd) {
+      background: yellow;
+    }
+    &:nth-child(even) {
+      background : green;
+    } 
+  }
