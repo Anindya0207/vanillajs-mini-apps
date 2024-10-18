@@ -1,0 +1,25 @@
+:root {
+    --red: red;
+}
+input {
+    height: 30px;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+.inputLabel {
+    display: inline-block;
+    width: 100px;
+}
+.inputRow {
+    margin: 10px 0;
+}
+#gridSizeInputError {
+    content: ' ';
+    font-size: 10px;
+    margin-top: 6px;
+    color: var(--red)
+}
+
+#root {
+    margin: 30px 0;
+}

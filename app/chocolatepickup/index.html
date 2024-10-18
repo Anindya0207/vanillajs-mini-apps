@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frontend Interview</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="/mc/chocolatepickup/styles.css">
+    <script defer type="module" src="/mc/chocolatepickup/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Frontend Interview Project</h1>
+    </header>
+    <main>
+        <div class="inputWrapper">
+            <div class="inputRow">
+                <label for="gridRow" name="gridRow" class="inputLabel">Enter Row </label>
+                <input required id="gridRow" name="gridRow" autoFocus />
+            </div>
+            <div class="inputRow">
+                <label for="gridColumn" name="gridColumn" class="inputLabel">Enter Column </label>
+                <input required id="gridColumn" name="gridColumn" />
+            </div>
+            
+            <button id="generateMaze" style="padding: 6px;width: 90px; float: right; margin: 10px 0;">
+                Generate
+            </button>            
+        </div>
+        
+        <section id="root"></section>
+
+        <div id="robo1Result"></div>
+        <div id="robo2Result"></div>
+        <div id="totalResult"></div>
+        <div id="actions">
+            <button id="resetBtn">
+                Reset
+            </button>
+            <button id="playBtn">
+                Auto Play
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Interview Prep</p>
+    </footer>
+</body>
+</html>
