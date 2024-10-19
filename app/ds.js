@@ -123,7 +123,7 @@ DQueue.prototype.popBack = function () {
 export class PriorityQueue {
   constructor(minMax) {
     this.heap = [];
-    this.minMax = minMax || "min";
+    this.minMax = minMax || 'min';
   }
   getParent(index) {
     return Math.floor((index - 1) / 2);
@@ -149,12 +149,12 @@ export class PriorityQueue {
     while (index > 0) {
       let parent = this.getParent(index);
       if (
-        this.minMax == "min" &&
+        this.minMax == 'min' &&
         this.heap[parent].priority <= this.heap[index].priority
       )
         break;
       if (
-        this.minMax == "max" &&
+        this.minMax == 'max' &&
         this.heap[parent].priority >= this.heap[index].priority
       )
         break;
@@ -172,24 +172,24 @@ export class PriorityQueue {
       if (leftIndex < n) {
         if (
           this.heap[leftIndex].priority < this.heap[overrideIndex].priority &&
-          this.minMax == "min"
+          this.minMax == 'min'
         )
           overrideIndex = leftIndex;
         if (
           this.heap[leftIndex].priority > this.heap[overrideIndex].priority &&
-          this.minMax == "max"
+          this.minMax == 'max'
         )
           overrideIndex = leftIndex;
       }
       if (rightIndex < n) {
         if (
           this.heap[rightIndex].priority < this.heap[overrideIndex].priority &&
-          this.minMax == "min"
+          this.minMax == 'min'
         )
           overrideIndex = rightIndex;
         if (
           this.heap[rightIndex].priority > this.heap[overrideIndex].priority &&
-          this.minMax == "max"
+          this.minMax == 'max'
         )
           overrideIndex = rightIndex;
       }
@@ -214,7 +214,6 @@ export class PriorityQueue {
     return min;
   }
 }
-
 
 export function DisjoinSet(size) {
   this.rankArr = Array.from({ length: size }, () => 0);
