@@ -28,19 +28,21 @@ const getContentType = (filePath) => {
   }
 };
 
-
 const server = http.createServer((req, res) => {
-  let filePath = path.join('./app');  
-  if(req.url.includes('/mc')) {
+  let filePath = path.join('./app');
+  if (req.url.includes('/mc')) {
     const module = req.url.split('/mc/')[1];
-    if(module) {
-      filePath = path.join(filePath, module);
+    console.log('Here', module);
+    if (module) {
+      console.log('Here1', filePath);
+      filePath = path.join(filePath, ...module.split('/'));
+      console.log('Here2', filePath);
     }
-    if(fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+    if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
       filePath = path.join(filePath, 'index.html');
     }
   }
-  if(fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+  if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
     filePath = path.join(filePath, 'index.html');
   }
   fs.readFile(filePath, (err, data) => {

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Frontend Interview</title>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="/mc/ticktacktoe/styles.css" />
+    <script defer type="module" src="/mc/ticktacktoe/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Frontend Interview Project</h1>
+    </header>
+    <main>
+      <div class="inputWrapper">
+        <div class="inputRow">
+          <label for="gridSize" name="gridSize">Enter grid size: </label>
+          <input required id="gridSize" name="gridSize" autofocus />
+        </div>
+        <div class="inputRow">
+          <label for="lineLength" name="lineLength">Enter line length: </label>
+          <input required id="lineLength" name="lineLength" autofocus />
+        </div>
+        <button
+          id="generateMaze"
+          style="
+            padding: 6px;
+            margin: 0;
+            margin-top: 10px;
+            float: right;
+            width: 90px;
+          "
+        >
+          Generate
+        </button>
+        <div id="gridSizeInputError"></div>
+      </div>
+      <section id="root"></section>
+      <div class="messages">
+        <div id="turnMessage" style="font-size: 30px; text-align: center"></div>
+        <div id="result" style="font-size: 50px; text-align: center"></div>
+      </div>
+      <div id="actions">
+        <button id="resetBtn">Reset</button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Interview Prep</p>
+    </footer>
+  </body>
+</html>
